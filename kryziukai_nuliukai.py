@@ -15,14 +15,12 @@ laimejimai = [["+", "-", "-", "+", "-", "-", "+", "-", "-"], ["-", "+", "-", "-"
 
 
 def tikrinti_laimejima():
-    pakeistas = kvadratas
+    pakeistas = kvadratas.copy()
     for counter, x in enumerate(pakeistas):
         if x == zaidejas:
             pakeistas[counter] = "+"
         else:
             pakeistas[counter] = "-"
-    print(pakeistas)
-    print(kvadratas)
     return pakeistas in laimejimai
 
 atspausdinti_kvadrata()
