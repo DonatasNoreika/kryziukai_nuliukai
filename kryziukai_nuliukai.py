@@ -30,6 +30,7 @@ while True:
     pasirinkimas = int(input(f"Žaidėjas {zaidejas}: pasirinkite veiksmą"))
     if pasirinkimas in kvadratas:
         kvadratas[kvadratas.index(pasirinkimas)] = zaidejas
+        atspausdinti_kvadrata()
         if tikrinti_laimejima():
             print(f"Žaidėjas {zaidejas} laimėjo!")
             break
@@ -39,4 +40,3 @@ while True:
             zaidejas = "X"
     else:
         print("Nėra tokio pasirinkimo, bandykite dar kartą")
-    atspausdinti_kvadrata()
